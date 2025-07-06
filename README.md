@@ -1,90 +1,103 @@
 # Dependency Chain Vulnerability Mapper
 
-![Project Status: Research Phase](https://img.shields.io/badge/Status-Research%20Phase-blue)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+**Project Status:** 🚧 Research Phase  
+**License:** MIT  
 
-A tool for visualizing and analyzing how vulnerabilities propagate through complex software dependency chains, enabling developers to make informed decisions about security risks in their codebase.
+A tool for **visualizing and analyzing how vulnerabilities propagate through software dependency chains**, helping developers prioritize security fixes based on actual exploitability paths — not just flat CVE lists.
+
+---
 
 ## 🔍 Overview
 
-Modern software relies on extensive dependency trees, often containing hundreds or thousands of packages. When vulnerabilities occur deep in these trees, understanding their impact becomes challenging:
+Modern software projects depend on complex webs of direct and transitive dependencies. When a vulnerability is reported deep in the tree, developers often face questions like:  
 
-- Which of your dependencies are actually affected?
-- How does the vulnerability propagate to your application?
-- Which paths represent exploitable attack vectors?
-- What's the most efficient remediation strategy?
+- Which of my dependencies are *actually* affected?  
+- How does the vulnerability propagate to my application?  
+- Are there exploitable paths from my app to the vulnerable code?  
+- What’s the most efficient remediation strategy with minimal breakage?  
 
-The Dependency Chain Vulnerability Mapper addresses these challenges by creating interactive visualizations of dependency networks with vulnerability overlays, providing context-aware risk assessment beyond what traditional vulnerability scanners offer.
+This tool tackles these questions by providing **interactive, actionable, and visual insights** into your project’s dependency network and vulnerabilities.
+
+---
 
 ## 🌟 Key Features (Planned)
 
-- **Dependency Tree Visualization**: Interactive graph representation of your project's direct and transitive dependencies
-- **Vulnerability Path Tracing**: Highlight paths from vulnerable components to your application
-- **Risk Prioritization**: Assess real-world impact based on exploitability and dependency usage
-- **Smart Remediation Suggestions**: Recommendations for the most efficient upgrade paths with minimal breaking changes
-- **Multi-Ecosystem Support**: Analysis for multiple package managers (npm, pip, etc.)
-- **CI/CD Integration**: Automated scanning during your build process
+- 📈 **Interactive Dependency Tree:** Visual graph of direct & transitive dependencies, with severity heatmaps.  
+- 🛡️ **Vulnerability Path Tracing:** Highlight actual paths from your application to the vulnerable package.  
+- 🚦 **Risk Prioritization:** Focus on reachable, runtime, high-impact vulnerabilities, not noise.  
+- 🔄 **Smart Remediation Suggestions:** Minimal, non-breaking upgrade paths to fix vulnerabilities.  
+- 🌐 **Multi-Ecosystem Support:** npm, pip, Maven, etc.  
+- ⚙️ **CI/CD Integration:** Automated scanning and actionable reports during builds.  
 
-## 🚧 Project Status
+---
 
-This project is currently in the **early research and planning phase**. We are:
+## 🚧 Current Status
 
-- Investigating vulnerability mapping approaches
-- Researching visualization techniques
-- Exploring integration with vulnerability databases
-- Evaluating potential tech stacks
+We’re currently in the **research and planning phase**, exploring:
 
-We welcome ideas, suggestions, and contributions from security researchers, developers, and the open-source community.
+- Approaches to vulnerability mapping & exploitability analysis.  
+- Visualization techniques that scale to large graphs.  
+- Integration with vulnerability databases (NVD, GitHub Advisories).  
+- Tech stacks and graph libraries.  
+
+We welcome ideas, research, and contributions from the community!  
+
+---
 
 ## 🛠️ Getting Started
 
-As this project is in its initial phase, there's no implementation yet. Check back soon for:
+At this stage, there is no working implementation yet.  
+Check back soon for:  
+- Installation instructions  
+- Configuration options  
+- Usage examples  
 
-- Installation instructions
-- Configuration options
-- Usage examples
+---
 
 ## 🔮 Vision
 
-Our long-term vision is to create a comprehensive tool that:
+We aim to build a tool that:  
+✅ Provides deeper insight than static vulnerability lists.  
+✅ Highlights real, exploitable paths based on actual code usage.  
+✅ Suggests actionable, minimal-change fixes.  
+✅ Fits naturally into existing developer workflows.  
+✅ Supports multiple ecosystems and CI/CD pipelines.  
 
-1. Provides deeper insight than flat vulnerability lists
-2. Considers actual code paths and usage patterns
-3. Offers actionable remediation strategies
-4. Integrates with existing security workflows
-5. Supports multiple ecosystems and package managers
+---
 
 ## 🤝 Contributing
 
-We welcome contributions of all kinds, especially during this early phase:
+We welcome contributions of all kinds, especially during this early phase:  
+- 📚 Research: Papers, techniques, or prior work.  
+- 🎨 Design: UI/UX feedback on visualization & usability.  
+- 🛠️ Technical: Insights into package managers or vulnerability analysis.  
+- 📝 Use Cases: Your organization’s real-world challenges with dependency security.  
 
-- **Ideas and Research**: Share papers, techniques, or existing approaches
-- **Design Input**: Suggestions on UI/UX for vulnerability visualization
-- **Technical Expertise**: Insights on specific package ecosystems or vulnerability analysis
-- **Use Cases**: Share your organization's challenges with dependency vulnerabilities
+### How to contribute:
+```bash
+fork the repository
+create your feature branch (git checkout -b feature/amazing-idea)
+commit your changes (git commit -m 'Add amazing idea')
+push to the branch (git push origin feature/amazing-idea)
+open a Pull Request
+```
 
-To contribute:
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-idea`)
-3. Commit your changes (`git commit -m 'Add some amazing idea'`)
-4. Push to the branch (`git push origin feature/amazing-idea`)
-5. Open a Pull Request
+---
 
-## 📚 Resources
+## 📚 Resources & Inspiration
 
 - [OWASP Dependency-Check](https://owasp.org/www-project-dependency-check/)
 - [NVD - National Vulnerability Database](https://nvd.nist.gov/)
 - [GitHub Security Advisories](https://github.com/advisories)
+- [Snyk](https://snyk.io/)
+- [Sonatype Nexus IQ](https://www.sonatype.com/products/nexus-iq-server)
 
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-```
+---
 
 ## 🛣️ Roadmap
 
-- [ ] Research Phase: Investigate approaches and technologies
-- [ ] Proof of Concept: Basic dependency tree visualization
-- [ ] Alpha Version: Add vulnerability mapping capabilities
-- [ ] Beta Version: Implement remediation suggestions
-- [ ] v1.0 Release: Production-ready tool with CI integration
+- **Research Phase:** Explore approaches, tech & UX  
+- **MVP:** Dependency graph & mock vulnerability overlay  
+- **Alpha:** Real vulnerability data & path tracing  
+- **Beta:** Reachability analysis & smart remediation  
+- **v1.0:** Multi-ecosystem support & CI/CD integration  
