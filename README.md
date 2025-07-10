@@ -1,4 +1,4 @@
-# 🚧 Dependency Chain Vulnerability Mapper
+# 🚧 Dependency Vuln Mapper
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Status: Research Phase](https://img.shields.io/badge/status-research-yellow)](https://github.com/GaruVA/dependency-chain-vulnerability-mapper)
