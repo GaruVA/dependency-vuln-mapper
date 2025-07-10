@@ -1,0 +1,40 @@
+{
+  "name": "dependency-vuln-mapper",
+  "version": "1.0.0",
+  "description": "[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE) [![Status: Research Phase](https://img.shields.io/badge/status-research-yellow)](https://github.com/GaruVA/dependency-chain-vulnerability-mapper)",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GaruVA/dependency-vuln-mapper.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GaruVA/dependency-vuln-mapper/issues"
+  },
+  "homepage": "https://github.com/GaruVA/dependency-vuln-mapper#readme",
+  "dependencies": {
+    "@dagrejs/graphlib": "^2.2.4",
+    "axios": "^1.10.0",
+    "commander": "^14.0.0",
+    "execa": "^9.6.0",
+    "semver": "^7.7.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.12",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  },
+  "type": "module",
+  "files": [
+    "dist"
+  ]
+}
