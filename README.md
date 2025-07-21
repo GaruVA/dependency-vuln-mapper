@@ -80,8 +80,3 @@ We aim to build a tool that:<br>
 | 🎯 v1.0     | Multi-ecosystem support & CI/CD integration   |
 
 
-## 📸 Demo
-
-*(Coming soon — stay tuned!)*
-
-
